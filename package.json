@@ -1,8 +1,8 @@
 {
-  "name": "webpack-base-construct-react",
+  "name": "webpack-gobuild",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "ISC",
+  "license": "MIT",
   "browserslist": [
     "cover 99.5%"
   ],
