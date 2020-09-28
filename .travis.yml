@@ -6,8 +6,8 @@ cache:
     - node_modules
 node_js: stable
 install:
-  - npm install -D
+  - yarn
   - cd ./test/smoke/template
-  - npm install -D
+  - yarn
 script:
-  - npm coverage
+  - yarn run coverage
