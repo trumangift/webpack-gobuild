@@ -8,8 +8,9 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "npm coverage",
-      "pre-push": "npm coverage"
+      "pre-commit": "yarn run coverage",
+      "pre-push": "yarn run coverage",
+      "commit-msg": "validate-commit-msg"
     }
   },
   "scripts": {
@@ -62,10 +63,5 @@
     "webpack-cli": "^3.3.1",
     "webpack-dev-server": "^3.3.1",
     "webpack-merge": "^5.1.4"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "validate-commit-msg"
-    }
   }
 }
