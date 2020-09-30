@@ -6,6 +6,12 @@
   "browserslist": [
     "cover 99.5%"
   ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run coverage",
+      "pre-push": "yarn run coverage"
+    }
+  },
   "scripts": {
     "fix": "eslint ./lib --fix",
     "eslint": "eslint ./lib",
