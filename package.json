@@ -6,19 +6,11 @@
   "browserslist": [
     "cover 99.5%"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn run coverage",
-      "pre-push": "yarn run coverage",
-      "commit-msg": "validate-commit-msg"
-    }
-  },
   "scripts": {
     "fix": "eslint ./lib --fix",
     "eslint": "eslint ./lib",
     "test": "node ./test/smoke/",
     "mocha": "mocha test/index.js",
-    "coverage": "istanbul cover ./node_modules/.bin/_mocha",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md  -s -r 0",
     "dll": "webpack --config ./lib/webpack.dll.js"
   },
@@ -44,7 +36,6 @@
     "autoprefixer": "^9.5.1",
     "babel-loader": "^8.0.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-polyfill": "^6.26.0",
     "clean-webpack-plugin": "^2.0.2",
     "css-loader": "^2.1.1",
     "cssnano": "^4.1.10",
